@@ -6,6 +6,9 @@ body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     color: #292929;
+    font-size: 16px;
+    line-height: 140%;
+
 }
 
 section {
@@ -90,6 +93,11 @@ section {
     padding: 120;
 }
 
+/* #region recommended */
+.recommended {
+    margin-bottom: 120px;
+}
+
 .recommended__title {
     margin-top: 0;
     margin-bottom: 64px;
@@ -99,6 +107,35 @@ section {
     line-height: 100%; /* 100% */
     letter-spacing: -1.5px;
 }
+
+.recommended__products {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+
+.product__photo{
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.product__title {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.product__category {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.product__price {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* #endregion */
 
 .categories__title {
     margin-top: 0;
