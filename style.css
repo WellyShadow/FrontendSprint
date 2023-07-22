@@ -1,8 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
 
+section {
+    height: 800px;
+}
+/* #region header */
 .header {
     display: flex;
     flex-direction: column;
@@ -21,6 +29,8 @@ body {
     justify-content: space-between;
 }
 
+/* #endregion */
+/* #region menu */
 .menu {
     box-sizing: border-box;
     height: 100vh;
@@ -34,7 +44,8 @@ body {
     justify-content: space-between;
     margin-bottom: 64px;
 }
-
+/* #endregion */
+/* #region nav */
 .nav {
     display: flex;
     flex-direction: column;
@@ -50,3 +61,4 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+/* #endregion */
