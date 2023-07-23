@@ -11,9 +11,7 @@ body {
 
 }
 
-/*section {
-    height: 800px;
-} */
+
 /* #region header */
 .header {
     display: flex;
@@ -94,6 +92,11 @@ body {
     background-color: #fff;
 }
 
+@media (max-width: 640px) {
+    .main {
+        padding: 20;
+    }
+}
 /* #region recommended */
 .recommended {
     margin-bottom: 120px;
@@ -115,6 +118,11 @@ body {
     gap: 24px;
 }
 
+@media (max-width: 640px) {
+    .recommended__products {
+        flex-direction: column;
+    }
+}
 .product {
     flex-basis: 324px;
 }
