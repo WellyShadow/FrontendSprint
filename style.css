@@ -11,9 +11,9 @@ body {
 
 }
 
-section {
+/*section {
     height: 800px;
-}
+} */
 /* #region header */
 .header {
     display: flex;
@@ -91,6 +91,7 @@ section {
 
 .main {
     padding: 120;
+    background-color: #fff;
 }
 
 /* #region recommended */
@@ -114,7 +115,9 @@ section {
     gap: 24px;
 }
 
-
+.product {
+    flex-basis: 324px;
+}
 .product__photo{
     width: 100%;
     margin-bottom: 32px;
@@ -123,6 +126,8 @@ section {
 .product__title {
     margin-top: 0;
     margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 140%;
 }
 
 .product__category {
@@ -137,6 +142,13 @@ section {
 
 /* #endregion */
 
+/* #region categories */
+.categories {
+    max-width: 1020px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
 .categories__title {
     margin-top: 0;
     margin-bottom: 64px;
@@ -147,11 +159,77 @@ section {
     letter-spacing: -1.5px;
 }
 
+/* #endregion */
+
+/* #region category */
+.category {
+    margin-bottom: 64px;
+}
+
+.category__photos {
+    display: flex;
+    gap: 3%;
+    margin-bottom: 16px;
+}
+
+.category__title {
+    margin: 0;
+}
+
+/* #endregion */
+
+/* #region photo */
+.photo-wide {
+    width: 65%;
+}
+.photo-square {
+    width: 32%;
+}
+
+/* #endregion */
+
+/* #region how-to-buy */
+
+.how-to-buy {
+    display: flex;
+    gap: 24px;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
 .how-to-buy__title {
+    flex-basis: 50%;
     margin-top: 0;
     margin-bottom: 64px;
     font-size: 48px;
     font-weight: 700;
     line-height: 100%; /* 100% */
     letter-spacing: -1.5px;
+}
+
+.how-to-buy__content {
+    flex-basis: 50%;
+}
+
+.how-to-buy__benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+/* #endregion */
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+    height: 460px;
+    background-image: url(images/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
